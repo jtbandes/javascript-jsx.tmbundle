@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Indentation</string>
+	<key>scope</key>
+	<string>meta.tag-content.jsx</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>&lt;/[^&gt;]+&gt;</string>
+		<key>increaseIndentPattern</key>
+		<string>&lt;(\w+)(?!.+?(/&gt;|&lt;/\1?&gt;))</string>
+	</dict>
+	<key>uuid</key>
+	<string>94D83C7E-594E-4E82-BBA8-E5B9838FDEF6</string>
+</dict>
+</plist>

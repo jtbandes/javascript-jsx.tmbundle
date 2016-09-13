@@ -23,7 +23,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
+					<string>punctuation.definition.tag.html</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -43,17 +43,17 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
+					<string>punctuation.definition.tag.html</string>
 				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>meta.tag-content.jsx</string>
+					<string>punctuation.definition.tag.html</string>
 				</dict>
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.begin.html</string>
+					<string>meta.scope.between-tag-pair.jsx</string>
 				</dict>
 				<key>4</key>
 				<dict>
@@ -63,7 +63,7 @@
 				<key>5</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.tag.end.html</string>
+					<string>punctuation.definition.tag.html</string>
 				</dict>
 			</dict>
 			<key>patterns</key>
@@ -78,7 +78,7 @@
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.tag.end.html</string>
+							<string>punctuation.definition.tag.html</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -124,9 +124,25 @@
 		<key>jsx-attribute</key>
 		<dict>
 			<key>begin</key>
-			<string>(?&lt;==)\{</string>
+			<string>(?&lt;==)(\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.begin.jsx</string>
+				</dict>
+			</dict>
 			<key>end</key>
-			<string>\}</string>
+			<string>(\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.end.jsx</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.embedded.line.js</string>
 			<key>patterns</key>
@@ -191,9 +207,27 @@
 		<key>jsx-embedded-js</key>
 		<dict>
 			<key>begin</key>
-			<string>\{</string>
+			<string>(\{)</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.begin.jsx</string>
+				</dict>
+			</dict>
 			<key>end</key>
-			<string>\}</string>
+			<string>(\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.embedded.end.jsx</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>meta.embedded.expression.js</string>
 			<key>patterns</key>
 			<array>
 				<dict>
